@@ -7,8 +7,8 @@ if ! hash gresource 2>/dev/null; then
   echo " "
   echo "Please install glib2 or glib2-devel"
   echo " "
-  echo "Fedora:"
-  echo "# dnf install glib2-devel"
+  echo "Ubuntu:"
+  echo "# sudo apt install libglib2.0-dev-bin"
   exit 1
 fi
 

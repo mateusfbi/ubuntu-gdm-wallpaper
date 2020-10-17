@@ -1,3 +1,6 @@
+# Ubuntu GDM Wallpaper
+This is a fork of the fedora-gdm-wallpaper project and some modifications for Ubuntu.
+
 # GDM Login screen background changer
 Script for GNOME 3.36+ with GNOME Shell themes packed inside /usr/share/gnome-shell/gdm3-theme.gresource.
 
@@ -7,7 +10,6 @@ This script allows change background on login screen.
 Ubuntu 20.04
 
 But should work on any distro with /usr/share/gnome-shell/gdm3-theme.gresource file.
-
 ```shell
 Script requires gresource binary (glib2 or glib2-devel library):
 # Ubuntu: 

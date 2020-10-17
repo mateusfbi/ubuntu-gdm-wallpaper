@@ -110,10 +110,10 @@ cp -f "$image" "$workdir/org/gnome/shell/theme/wallpaper-gdm.png"
 echo '</gresource></gresources>' >>"$workdir/gdm3-theme.gresource.xml"
 
 
-# find #lockDialogGroup block inside gnome-shell.css and replace with new_theme_params with our image
+# find #lockDialogGroup block inside gdm3.css and replace with new_theme_params with our image
 # and add image_parameters
 new_theme_params="background: #2e3436 url(resource:\/\/\/org\/gnome\/shell\/theme\/wallpaper-gdm.png);$image_parameters"
-sed -i -z -E "s/#lockDialogGroup \{[^}]+/#lockDialogGroup \{$new_theme_params/g" "$workdir/org/gnome/shell/theme/gnome-shell.css"
+sed -i -z -E "s/#lockDialogGroup \{[^}]+/#lockDialogGroup \{$new_theme_params/g" "$workdir/org/gnome/shell/theme/gdm3.css"
 
 # create gresource file with file list inside gdm3-theme.gresource.xml
 glib-compile-resources "$workdir/gdm3-theme.gresource.xml"
